@@ -8,45 +8,66 @@
     <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--MEU CSS-->
     <link rel="stylesheet" href="style/style.css">
+    <!--FONTES-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 
 <body>
     <!--INICIO BARRA SUPERIOR -->
-    <header>
-        <h1>Olá eu sou a Sidnéia</h1>
-        <h2>Desenvimento Web | Frontend</h2>
-        <img src="img/perfil.jpg" alt="Foto do rosto de uma mulher parda com cabelos castanhos ondulados.">
+    <header class="container">
+        <div class="row col-xs-12 col-md-12">
+            <div class="row col-xs-6 col-md-6">
+                <img class="perfil" src="img/perfil.jpg" alt="Foto do rosto de uma mulher parda com cabelos castanhos ondulados.">
+            </div>
+            <div class="row col-xs-6 col-md-6 conteudo">
+                <h1>Olá eu sou a Sidnéia</h1>
+                <h2>Desenvolvimento Web | Frontend</h2>
+            </div>
+        </div>
     </header>
     <!--FIM BARRA SUPERIOR -->
 
     <!--INICIO APRESENTAÇÃO-->
-    <div>
-        <h2>Quem sou</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic, placeat recusandae deleniti quis. Sunt odio
-            tempora libero omnis vel quod, obcaecati at, atque vitae quasi animi facilis ea, autem.</span><span>Delectus eos iure minima, fugiat ex debitis porro, at deleniti deserunt commodi quasi maxime laboriosam pariatur earum quis animi reiciendis exercitationem. Quia minima facilis rem eveniet voluptatibus minus esse quod.</p>
-        <h2>O que já fiz</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic, placeat recusandae deleniti quis. Sunt odio tempora libero omnis vel quod, obcaecati at, atque vitae quasi animi facilis ea, autem.</span><span>Delectus eos iure minima, fugiat ex debitis porro, at deleniti deserunt commodi quasi maxime laboriosam pariatur earum quis animi reiciendis exercitationem. Quia minima facilis rem eveniet voluptatibus minus esse quod.</p>
-        <h2>O  que faço</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic, placeat recusandae deleniti quis. Sunt odio tempora libero omnis vel quod, obcaecati at, atque vitae quasi animi facilis ea, autem.</span><span>Delectus eos iure minima, fugiat ex debitis porro, at deleniti deserunt commodi quasi maxime laboriosam pariatur earum quis animi reiciendis exercitationem. Quia minima facilis rem eveniet voluptatibus minus esse quod.</p>
-    </div>
+    <section class="container">
+        <div class="row col-xs-12 col-md-4 caixaconteudoapresentacao">
+            <h2 class="conteudo">Quem sou</h2>
+            <p class="conteudoapresentacao">Lorem ipsum dolor sitotempora libero omnis vel quod, obcaecati at, atque vitae quasi animi facilis ea, autem.</span><span>Delectus eos iure minima, fugiat ex debitis porro, at deleniti deserunt commodi quasi maxime laboriosam pariatur earum quis animi reiciendis exercitationem. Quia inus esse quod.</p>
+        </div>
+        <div class="row col-xs-12 col-md-4 caixaconteudoapresentacao">
+            <h2 class="conteudo">O que já fiz</h2>
+            <p class="conteudoapresentacao">Lorem ipsum dolor sitotempora libero omnis vel quod, obcaecati at, atque vitae quasi animi facilis ea, autem.</span><span>Delectus eos iure minima, fugiat ex debitis porro, at deleniti deserunt commodi quasi maxime laboriosam pariatur earum quis animi reiciendis exercitationem. Quia inus esse quod</p>
+        </div>
+        <div class="row col-xs-12 col-md-4 caixaconteudoapresentacao">
+            <h2 class="conteudo">O  que faço</h2>
+            <p class="conteudoapresentacao">Lorem ipsum dolor sitotempora libero omnis vel quod, obcaecati at, atque vitae quasi animi facilis ea, autem.</span><span>Delectus eos iure minima, fugiat ex debitis porro, at deleniti deserunt commodi quasi maxime laboriosam pariatur earum quis animi reiciendis exercitationem. Quia inus esse quod</p>
+        </div>        
+    </section>
     <!--FIM APRESENTAÇÃO-->
     <!--INICIO PROJETOS-->
-    <div>
-        <h2>Projetos</h2>
-            <img src="img/projeto.png" alt="">
-            <h3>Definir Projeto 1</h3>
-            <img src="img/projeto.png" alt="">
-            <h3>Definir Projeto 2</h3>
-            <img src="img/projeto.png" alt="">
-            <h3>Definir Projeto 3</h3>
-    </div>   
+    <section class="container">
+        <h2 class="projetos">Projetos</h2>
+            <div class="row col-xs-12 col-md-4 caixa conteudo">
+                <img class="imagensprojetos" src="img/projeto.png" alt="">
+                <h3>Definir Projeto 1</h3>
+            </div>
+            <div class="row col-xs-12 col-md-4 caixa conteudo">
+                <img class="imagensprojetos" src="img/projeto.png" alt="">
+                <h3>Definir Projeto 2</h3>
+            </div>
+            <div class="row col-xs-12 col-md-4 caixa conteudo">
+                <img class="imagensprojetos" src="img/projeto.png" alt="">
+                <h3>Definir Projeto 3</h3>
+            </div>
+    </section>   
     <!--FIM PROJETOS-->
     <!--INICIO CONTATO-->
-    <footer>
+    <footer class="container conteudo">
         <h2>Contato</h2>
-        <p>sidneiasfranca@gmail.com</p>
-        <p>Linkedin | Github</p>
+        <ul>
+            <li> <a href="sidneiasfranca@gmail.com">sidneiasfranca@gmail.com</a> </li>
+            <li> <a href="https://github.com/neiasf/">Github</a> </li>
+        </ul>
     </footer>
     <!--FIM CONTATO-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
