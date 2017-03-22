@@ -11,24 +11,27 @@ h1{
   text-transform: uppercase;
 }
 h2 {
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 h3{
   font-size: 20px;
     text-transform: uppercase;
 }
-
-header h1, header h2 {
-  color: #fff;
+a:focus, a:hover {
+    text-decoration: none;
 }
-
+header h1, header h2 {
+  color: #2A3D54;
+}
+.apresentacao{
+  position: relative;
+}
 .top {
   background-image: url('../img/bg.gif');
   background-repeat: repeat-x;
   background-position: 0 -167px;
 }
-
 .top .perfil{
   background-color: #EA285B;
   height: 228px;
@@ -36,18 +39,85 @@ header h1, header h2 {
   margin: 2em auto;
   border-radius: 100%;
 }
-
 .top .perfil img{
   opacity: .3; 
   border-radius: 100%;
 }
+.titulo {
+    position: absolute;
+    bottom: 45px;
+    left: 245px;
+}
 .top h1, .top h2{
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.box{
+  border-top: 5px solid #EA285B;
+  height: 225px;
+}
+/*Carrossel*/
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+.carousel-control {
+  opacity: 0.2;
+}
+.carousel-control:focus, .carousel-control:hover {
+  opacity: 0.5;
+}
+.carousel-control.right {
+    background-image: linear-gradient(to right,rgba(18,95,101,.0001) 0,rgba(18,95,101,.1) 100%);
+}
+.carousel-control.left {
+    background-image: linear-gradient(to right,rgba(18,95,101,.1) 0,rgba(18,95,101,.0001) 100%);
+}
+/*Projetos*/
+.proj h2{
+  background-color: #EA285B;
+  color: #FFFFFF;
+  padding: 10px;
   text-align: center;
 }
 
-.top h1{
-  margin-top: 1em;
+.proj h3{
+  text-align: center;
 }
+
+/*Rodape*/
 footer{
   background-color: lightgray;
   border-left: 15px solid #EA285B;

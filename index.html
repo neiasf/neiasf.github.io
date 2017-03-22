@@ -17,13 +17,13 @@
     <!--INICIO BARRA SUPERIOR -->
     <header>
         <div class="row top">
-            <div class="container">
+            <div class="container apresentacao">
                 <div class="col-md-3">
                     <span class="perfil">
                         <img src="img/perfil.jpg" width="228" alt="Foto do rosto de uma mulher parda com cabelos castanhos ondulados.">
                     </span>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 titulo">
                     <h1>Sidnéia França</h1>
                     <h2>Desenvolvimento Web | Frontend</h2>
                 </div>
@@ -36,22 +36,82 @@
     <section id="services" class="container">
         <div class="row text-center">
             <div class="col-md-4">
-                <h2>Quem sou</h2>
-                <p>Lorem ipsum dolor sitotempora libero omnis vel quod, obcaecati at, atque vitae quasi animi facilis ea, autem.
-                    </span><span>Delectus eos iure minima, fugiat ex debitis porro, at deleniti deserunt commodi quasi maxime laboriosam pariatur earum quis animi reiciendis exercitationem. Quia inus esse quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>                   
-                </div>
-                <div class="col-md-4">
+                <div class="box">
+                    <h2>Quem sou</h2>
+                    <p>Lorem ipsum dolor sitotempora libero omnis vel quod, obcaecati at, atque vitae quasi animi facilis ea,
+                        autem.
+                        </span><span>Delectus eos iure minima, fugiat ex debitis porro, at deleniti deserunt commodi quasi maxime laboriosam pariatur earum quis animi reiciendis exercitationem. Quia inus esse quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>                 
+            </div>
+            <div class="col-md-4">
+                    <div class="box">
                     <h2>O que já fiz</h2>
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4 ">
+                    </div>
+            </div>
+            <div class="col-md-4 ">
+                    <div class="box">
                     <h2>O que faço</h2>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
             </div>
         </div>
+        </div>        
     <!--FIM APRESENTAÇÃO-->
     <!--INICIO PROJETOS-->
+          <div class="row aSection">
+            <div class="container proj">
+                <h2>Projetos</h2>
+                    <div class="carousel slide multi-item-carousel aSecaoNovidades" id="Carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-md-4">
+                                    <a href="#1">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <img src="img/projeto.png" class="img-responsive">
+                                            <h3>Projeto 1</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="#1">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <img src="img/projeto.png" class="img-responsive">
+                                            <h3>Projeto 2</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="#1">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <img src="img/projeto.png" class="img-responsive">
+                                            <h3>Projeto 3</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="#1">
+                                        <div class="aNovidade aNovidadeTexto">
+                                            <img src="img/projeto.png" class="img-responsive">
+                                            <h3>Projeto 4</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        <!--  Botoes de direcao -->
+                        </div>
+                        <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+            </div>
+          </div>
+
     <!--FIM PROJETOS-->
     <!--INICIO CONTATO-->
 
@@ -60,5 +120,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="style/bootstrap/js/bootstrap.min.js"></script>
+    <!--Slider de projetos-->
+    <script src="js/slider.js"></script>
 </body>
 </html>
